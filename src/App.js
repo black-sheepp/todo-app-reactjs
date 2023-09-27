@@ -47,12 +47,12 @@ function App() {
 
 	useEffect(() => {
 		localStorage.setItem("todos", JSON.stringify(todos));
-		console.log(todos);
+		// console.log(todos);
 	}, [todos]);
 
 	useEffect(() => {
 		localStorage.setItem("todosDone", JSON.stringify(todosDone));
-		console.log(todosDone);
+		// console.log(todosDone);
 	}, [todosDone]);
 
 	const resetAllData = () => {
@@ -85,7 +85,7 @@ function App() {
 						<div className='flex justify-center md:justify-end'>
 							<aside className='bg-black text-white p-6 m-2 rounded-lg w-full max-w-lg font-mono'>
 								<div className='flex justify-between items-center'>
-									<p className='text-sm text-green-400'>todo list</p>
+									<p className='text-lg text-green-400'>todo list</p>
 								</div>
 								<div className='mt-4 divide-y divide-green-300'>
 									{todos
@@ -108,7 +108,7 @@ function App() {
 						<div className='flex justify-center md:justify-start'>
 							<aside className='bg-black text-white p-6 m-2 rounded-lg w-full max-w-lg font-mono'>
 								<div className='flex justify-between items-center'>
-									<p className='text-sm text-red-400'>task done</p>
+									<p className='text-lg text-red-400'>task done</p>
 								</div>
 								<div className='mt-4 divide-y divide-red-300'>
 									{todosDone.map((todo, ind) => {
