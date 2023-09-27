@@ -6,7 +6,7 @@ const TodoList = (props) => {
 		<div>
 			<p 
             onClick={e => {
-                props.removeTodo(props.index)
+                props.removeTodo(props.index);
             }}
             className='text-white mt-3 mb-3 hover:text-yellow-300 cursor-pointer'>
 				<small>👉</small> {props.todo}

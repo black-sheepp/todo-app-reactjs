@@ -55,6 +55,10 @@ function App() {
 		console.log(todosDone);
 	}, [todosDone]);
 
+	const resetAllData = () => {
+		setTodos([], []);
+		setTodosDone([], []);
+	}
 
 	return (
 		<>
@@ -115,7 +119,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<ResetBtn />
+				<ResetBtn resetAllData={resetAllData} />
 			</div>
 		</>
 	);
