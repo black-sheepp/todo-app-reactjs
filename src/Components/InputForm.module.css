@@ -1,0 +1,25 @@
+/* form control */
+
+.formControl,
+.formControl:focus,
+.formControl:active,
+.formControl:active:focus {
+    border: none;
+    border-radius: 8px;
+    width: 400px;
+    margin-top: 10px;
+    padding: 10px 35px;
+    outline: none;
+}
+
+.formControl {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.formControl:focus {
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
