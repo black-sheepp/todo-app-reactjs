@@ -15,7 +15,7 @@ function App() {
 					<div className='flex justify-center pt-5'>
 						<Logo />
 					</div>
-					<h1 className='text-white text-center pt-5 text-3xl'>ToDo App</h1>
+					<h1 className='text-white text-center pt-3 text-3xl'>ToDo App</h1>
 				</nav>
 
 				{/* Header Message */}
@@ -26,8 +26,7 @@ function App() {
 					<InputForm />
 				</div>
 
-
-				<div className="flex justify-center m-0">
+				<div className='flex justify-center flex-col m-3 md:flex-row'>
 					{/* ToDo List Section */}
 					<div className='flex flex-col'>
 						<div className='flex justify-center'>
@@ -58,7 +57,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-			<ResetBtn />
+				<ResetBtn />
 			</div>
 		</>
 	);

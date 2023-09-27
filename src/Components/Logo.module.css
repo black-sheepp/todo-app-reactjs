@@ -1,13 +1,13 @@
 .switch {
     position: relative;
     cursor: pointer;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(45deg,
             rgb(183, 0, 255) 20%,
             rgb(255, 0, 170) 100%);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .switch input {
