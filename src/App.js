@@ -37,9 +37,6 @@ function App() {
 								</div>
 								<div className='mt-4 divide-y divide-green-300'>
 									<TodoList />
-									<TodoList />
-									<TodoList />
-									<TodoList />
 								</div>
 							</aside>
 						</div>
