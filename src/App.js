@@ -26,35 +26,42 @@ function App() {
 					<InputForm />
 				</div>
 
-				<ResetBtn />
 
-				{/* ToDo List Section */}
-				<div className='flex flex-col'>
-					<div className='flex justify-center'>
-						<aside className='bg-black text-white p-6 m-4 rounded-lg w-full max-w-lg font-mono'>
-							<div className='flex justify-between items-center'>
-								<p className='text-sm text-green-400'>todo list</p>
-							</div>
-							<div className='mt-4'>
-								<TodoList />
-							</div>
-						</aside>
+				<div className="flex justify-center m-0">
+					{/* ToDo List Section */}
+					<div className='flex flex-col'>
+						<div className='flex justify-center'>
+							<aside className='bg-black text-white p-6 m-4 rounded-lg w-full max-w-lg font-mono'>
+								<div className='flex justify-between items-center'>
+									<p className='text-sm text-green-400'>todo list</p>
+								</div>
+								<div className='mt-4 divide-y divide-green-300'>
+									<TodoList />
+									<TodoList />
+									<TodoList />
+									<TodoList />
+								</div>
+							</aside>
+						</div>
+					</div>
+
+					{/* Completed Todo Section */}
+					<div className='flex flex-col'>
+						<div className='flex justify-center'>
+							<aside className='bg-black text-white p-6 m-4 rounded-lg w-full max-w-lg font-mono'>
+								<div className='flex justify-between items-center'>
+									<p className='text-sm text-red-400'>task done</p>
+								</div>
+								<div className='mt-4 divide-y divide-red-300'>
+									<TodoComleted />
+									<TodoComleted />
+									<TodoComleted />
+								</div>
+							</aside>
+						</div>
 					</div>
 				</div>
-
-				{/* Completed Todo Section */}
-				<div className='flex flex-col'>
-					<div className='flex justify-center'>
-						<aside className='bg-black text-white p-6 m-4 rounded-lg w-full max-w-lg font-mono'>
-							<div className='flex justify-between items-center'>
-								<p className='text-sm text-red-400'>task done</p>
-							</div>
-							<div className='mt-4'>
-								<TodoComleted />
-							</div>
-						</aside>
-					</div>
-				</div>
+			<ResetBtn />
 			</div>
 		</>
 	);
