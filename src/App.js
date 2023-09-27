@@ -8,9 +8,30 @@ import TodoComleted from "./Components/TodoComleted";
 import TodoList from "./Components/TodoList";
 import { useEffect } from "react";
 
+// get the localStorage data from browser
+const getTodoLocalStorage = () => {
+	let todoList = localStorage.getItem('todos');
+
+	if(todoList){
+		return JSON.parse(localStorage.getItem('todos'));
+	}else{
+		return [];
+	}
+}
+
+const getTodoDoneLocalStorage = () => {
+	let todoDone = localStorage.getItem('todosDone');
+
+	if(todoDone){
+		return JSON.parse(localStorage.getItem('todosDone'))
+	}else{
+		return [];
+	}
+}
+
 function App() {
-	const [todos, setTodos] = useState([]);
-	const [todosDone, setTodosDone] = useState([]);
+	const [todos, setTodos] = useState(getTodoLocalStorage());
+	const [todosDone, setTodosDone] = useState(getTodoDoneLocalStorage());
 
 	const addTodo = (text) => {
 		setTodos([...todos, text]);
@@ -18,7 +39,9 @@ function App() {
 
 	const removeTodo = (key) => {
 		let uncompletedTodos = [...todos];
-		setTodosDone([...todosDone, uncompletedTodos.splice(key, 1)]);
+		let temp = uncompletedTodos.splice(key, 1);
+		let val = temp[0];
+		setTodosDone([...todosDone, val]);
 		setTodos([...uncompletedTodos]);
 	};
 
