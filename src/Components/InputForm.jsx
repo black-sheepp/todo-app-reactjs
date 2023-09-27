@@ -18,7 +18,7 @@ const InputForm = ({ addTodo }) => {
 				<input
 					type='text'
 					className={Styles.formControl}
-					placeholder='✍️ Add item...'
+					placeholder='✍️ Add New ToDo...'
 					onChange={(e) => {
 						setInputValue(e.target.value);
 					}}
