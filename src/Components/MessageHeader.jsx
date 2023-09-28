@@ -34,7 +34,7 @@ const MessageHeader = () => {
 
 	return (
 		<div>
-			<p className='text-[#B600FE] text-center pt-6 text-2xl animate__animated animate__swing'>
+			<p className='text-[#B600FE] text-center pt-10 text-2xl animate__animated animate__swing'>
 				Hey!👋 Good {wish}, Today's {day} 🙂
 				<br /> <small className='text-lg text-yellow-200'>Add, Check and update your todo list.</small>
 			</p>

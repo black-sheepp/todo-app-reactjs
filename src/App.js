@@ -69,11 +69,11 @@ function App() {
 		<>
 			<div className='h-screen bg-[#020631]'>
 				{/* Navbar Section */}
-				<nav>
+				<nav className="flex justify-center mt-5">
 					<div className='flex justify-center pt-5'>
 						<Logo />
 					</div>
-					<h1 className='text-white text-center pt-3 text-3xl animate__animated animate__flash'>ToDo App</h1>
+					<h1 className='text-white text-center pt-8 ml-3 text-3xl animate__animated animate__flash'>ToDo App</h1>
 				</nav>
 
 				{/* Header Message */}
@@ -90,7 +90,7 @@ function App() {
 						kickstart your productive journey!
 					</p>
 				) : (
-					<div className='flex justify-center w-full flex-col mt-3 md:flex-row animate__animated animate__pulse'>
+					<div className='flex justify-center w-full flex-col mt-5 md:flex-row animate__animated animate__pulse'>
 						{/* ToDo List Section */}
 						<div className='flex flex-col w-full'>
 							<div className='flex justify-center md:justify-end'>
