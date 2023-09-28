@@ -69,7 +69,7 @@ function App() {
 		<>
 			<div className='h-screen bg-[#020631]'>
 				{/* Navbar Section */}
-				<nav className="flex justify-center mt-5">
+				<nav className="flex justify-center pt-5">
 					<div className='flex justify-center pt-5'>
 						<Logo />
 					</div>
@@ -86,8 +86,8 @@ function App() {
 
 				{todos.length === 0 && todosDone.length === 0 ? (
 					<p className='text-[#00f59b] text-2xl text-center mt-20 ml-24 mr-24 animate__animated animate__backInUp'>
-						Welcome to the Todo App! Let's get organized together. Create your first todo and
-						kickstart your productive journey!
+						Welcome to the Todo App!😊 Let's get organized together. Create your first todo and
+						kickstart your productive journey 🎉🥳!!
 					</p>
 				) : (
 					<div className='flex justify-center w-full flex-col mt-5 md:flex-row animate__animated animate__pulse'>
