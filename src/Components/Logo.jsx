@@ -1,9 +1,10 @@
 import React from "react";
 import Style from "./Logo.module.css";
+import "animate.css";
 
 const Logo = () => {
 	return (
-		<div>
+		<div className="animate__animated animate__wobble">
 			<div className={Style.switch}>
 				<div type={Style.checkbox}></div>
 				<div>
