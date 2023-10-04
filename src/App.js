@@ -107,8 +107,7 @@ function App() {
 													todo={todo}
 													removeTodo={removeTodo}
 												/>
-											))
-											.reverse()}
+											))}
 									</div>
 								</aside>
 							</div>
@@ -125,8 +124,7 @@ function App() {
 										{todosDone
 											.map((todo, ind) => {
 												return <TodoComleted key={ind} todo={todo} />;
-											})
-											.reverse()}
+											})}
 									</div>
 								</aside>
 							</div>
