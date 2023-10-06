@@ -1,3 +1,12 @@
+
+• Developed a user-friendly Todo list application using ReactJS, showcasing strong proficiency in building modular UI components. 
+
+• Implemented local storage functionality to ensure that the app retains its state even after a browser refresh, providing a seamless offline experience for users. 
+
+• Utilized styled module CSS and integrated Tailwind CSS for responsive and visually appealing UI design. Additionally, incorporated Animate CSS for smooth and attractive animations. 
+
+• Improved usability with a top-right reset button for clearing all Todos and restoring the initial state.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
